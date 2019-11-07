@@ -1,0 +1,17 @@
+.eventItem {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.ptr {
+    cursor: pointer;
+}
+
+.poster, .date, .time, .location {
+    padding-left: 40px;
+    font-style: italic;
+}
+
+.eventItem > span {
+    padding-left: 10px;
+}
