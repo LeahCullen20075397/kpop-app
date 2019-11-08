@@ -10,6 +10,7 @@
 .date, .time, .location {
     padding-left: 40px;
     font-style: italic;
+    font-size: 10px;
 }
 
 .eventItem > span {
