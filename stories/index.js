@@ -4,6 +4,7 @@ import EventForm from '../src/components/eventForm';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import EventItem from '../src/components/eventItem';
 import EventList from '../src/components/eventList';
+import {action} from "@storybook/addon-actions";
 
 const post = {
     id: 1,
@@ -19,9 +20,9 @@ const post = {
 
 storiesOf("Kpop Events App/eventForm", module).add("default", () => <EventForm />);
 storiesOf("Kpop Events App/Event Item", module)
-    .add("default", () => <EventItem post = {post}/>
+    .add("default", () => <EventItem post = {post} upvoteHandler = {action("upvoted")}/>
     )
-    .add("No hyperlink", () => <EventItem post = {{...post, link: ""}}/>
+    .add("No hyperlink", () => <EventItem post = {{...post, link: ""}} upvoteHandler = {action("upvoted")}/>
     );
 storiesOf("Kpop Events App/Event List", module)
     .add("default", () => {

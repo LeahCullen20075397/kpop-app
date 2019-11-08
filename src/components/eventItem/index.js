@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import './eventItem.css';
 
 export default class EventItem extends Component {
+    handleVote = () => this.props.upvoteHandler(this.props.post.id);
     render() {
         let line = this.props.post.link ? (
             <a href = {this.props.post.link}>{this.props.post.event}</a>
@@ -16,7 +17,7 @@ export default class EventItem extends Component {
                         <a href = "/"> Comments</a>
                     </span>
                 </span>
-                <span className = "ptr">
+                <span className = "ptr" onClick = {this.handleVote}>
                     <button className="glyphicon glyphicon-thumbs-up btn-md">Like</button> 
                     {`${this.props.post.upvotes}`} 
                 </span>

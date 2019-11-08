@@ -5,8 +5,9 @@ export default class EventList extends Component{
     render() {
         let items = this.props.posts.map((post, index) => (
             <EventItem
-                key = {post.id}
+                key = {index}
                 post = {post}
+                upvoteHandler = {this.props.upvoteHandler}
             />
         ));
         return <Fragment>{items}</Fragment>
