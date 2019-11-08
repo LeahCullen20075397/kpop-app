@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import './eventItem.css';
+import {Link} from 'react-router-dom';
 
 export default class EventItem extends Component {
     handleVote = () => this.props.upvoteHandler(this.props.post.id);
@@ -14,7 +15,7 @@ export default class EventItem extends Component {
                 <span className = "eventitem">
                     {line}
                     <span>
-                        <a href = "/"> Comments</a>
+                        <Link to = {`/posts/${this.props.post.id}`}>Comments</Link>
                     </span>
                 </span>
                 <span className = "ptr" onClick = {this.handleVote}>
