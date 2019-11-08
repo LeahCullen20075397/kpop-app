@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react';
 import EventForm from '../src/components/eventForm';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import EventItem from '../src/components/eventItem';
+import EventList from '../src/components/eventList';
 
 const post = {
     id: 1,
@@ -22,3 +23,13 @@ storiesOf("Kpop Events App/Event Item", module)
     )
     .add("No hyperlink", () => <EventItem post = {{...post, link: ""}}/>
     );
+storiesOf("Kpop Events App/Event List", module)
+    .add("default", () => {
+        const defaultPosts = [
+            {...post, id: 1, event: "Post 1", upvotes: 20},
+            {...post, id: 2, event: "Post 2", upvotes: 25},
+            {...post, id: 3, event: "Post 3", upvotes: 30},
+            {...post, id: 4, event: "Post 4", upvotes: 35}
+        ];
+        return <EventList posts = {defaultPosts} />
+    });

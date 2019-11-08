@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-.poster, .date, .time, .location {
+.date, .time, .location {
     padding-left: 40px;
     font-style: italic;
 }
