@@ -18,7 +18,7 @@ const post = {
     upvotes: 10
 }
 
-storiesOf("Kpop Events App/eventForm", module).add("default", () => <EventForm />);
+storiesOf("Kpop Events App/eventForm", module).add("default", () => <EventForm handleAdd = {action("added a new event: ")}/>);
 storiesOf("Kpop Events App/Event Item", module)
     .add("default", () => <EventItem post = {post} upvoteHandler = {action("upvoted")}/>
     )
