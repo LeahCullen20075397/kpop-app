@@ -86,7 +86,7 @@ class StubAPI {
         if(last) {
             id = last.id + 1;
         }
-        post.comments.push({id: id, comment: c, poster: n, upvotes: 0});
+        post.comments.push({id: id, comment: c, name: n, upvotes: 0});
     }
 
     upvoteComment(postId, commentId) {

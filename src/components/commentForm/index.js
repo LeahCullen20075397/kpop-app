@@ -13,7 +13,7 @@ export default class Form extends Component {
     onSubmit = e => {
         e.preventDefault();
         let comment = this.state.comment.trim();
-        let name = this.state.trim();
+        let name = this.state.name.trim();
         if(!comment) {
             return;
         }

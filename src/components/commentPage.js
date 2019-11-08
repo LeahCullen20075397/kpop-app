@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 import _ from 'lodash';
-import api from '../dataStore/stubAPi';
+import api from '../dataStore/stubAPI';
 import CommentList from './commentList';
 import Form from './commentForm';
 
@@ -24,7 +24,7 @@ class CommentPage extends Component {
         let pid = this.getId()
         let post = api.getPost(pid);
         let line = post.link?
-            <a href = {post.link}>{post.event}</a> :
+            <a href = {post.link}>{post.event}</a>:
             <span>{post.event}</span>;
         let comments = _.sortBy(post.comments,
             (comment) => -comment.upvotes

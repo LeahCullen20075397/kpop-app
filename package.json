@@ -8,6 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@storybook/addon-actions": "^5.2.5",
     "bootstrap": "^3.3.6",
+    "link-react": "^3.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",

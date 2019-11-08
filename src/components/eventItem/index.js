@@ -15,7 +15,7 @@ export default class EventItem extends Component {
                 <span className = "eventitem">
                     {line}
                     <span>
-                        <Link to = {`/posts/${this.props.post.id}`}>Comments</Link>
+                        <Link to={`/posts/${this.props.post.id}`}> Comments</Link>
                     </span>
                 </span>
                 <span className = "ptr" onClick = {this.handleVote}>

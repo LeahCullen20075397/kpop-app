@@ -8,8 +8,8 @@ export default class Comment extends Component {
     render() {
         return(
             <Fragment>
-                <span className = "commenntitem">
-                    {`${this.props.comment.comment}(by ${this.props.comment.author})`}
+                <span className = "commentitem">
+                    {`${this.props.comment.comment}(by ${this.props.comment.name})`}
                 </span>
                 <span className = "ptr" onClick = {this.handleVote}>
                     <button className="glyphicon glyphicon-thumbs-up btn-md">Like</button> 
