@@ -5,6 +5,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import EventItem from '../src/components/eventItem';
 import EventList from '../src/components/eventList';
 import {action} from "@storybook/addon-actions";
+import CommentForm from '../src/components/commentForm';
+import Comment from '../src/components/comment';
+import CommentList from '../src/components/commentList';
 
 const post = {
     id: 1,
@@ -17,6 +20,13 @@ const post = {
     comments: [],
     upvotes: 10
 }
+
+const comment = {
+    id: 1,
+    author: "Leah Cullen",
+    comment: "Oooooh I'm so excited xD",
+    upvotes: 10
+};
 
 storiesOf("Kpop Events App/eventForm", module).add("default", () => <EventForm handleAdd = {action("added a new event: ")}/>);
 storiesOf("Kpop Events App/Event Item", module)
@@ -34,3 +44,20 @@ storiesOf("Kpop Events App/Event List", module)
         ];
         return <EventList posts = {defaultPosts} />
     });
+storiesOf("Kpop Events App/Comment Page/Comment Form", module).add("default", () => (
+    <CommentForm post = {post} addCommentHandler = {action("comment added")}/>
+));
+storiesOf("Kpop Events App/Comment Page/Comment", module).add("default", () => (
+    <Comment upvoteHandler = {action("upvoted")} comment = {comment}/>
+));
+storiesOf("Kpop Events App/Comment Page/Comment list", module).add("default", () => {
+    const defaultComments = [
+        comment,
+        {...comment, author: "Matthias", upvotes: 3, id: 2},
+        {...comment, comment: "When is BTS coming to Ireland?", id: 3},
+        {...comment, author: "Sophie Smith", upvotes: 5, id: 4}
+    ];
+    return(
+        <CommentList upvoteHandler = {action("upvoted")} comments = {defaultComments}/>
+    );
+});

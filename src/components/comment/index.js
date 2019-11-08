@@ -8,12 +8,12 @@ export default class Comment extends Component {
     render() {
         return(
             <Fragment>
+                <span className = "commenntitem">
+                    {`${this.props.comment.comment}(by ${this.props.comment.author})`}
+                </span>
                 <span className = "ptr" onClick = {this.handleVote}>
                     <button className="glyphicon glyphicon-thumbs-up btn-md">Like</button> 
                     {`${this.props.comment.upvotes}`} 
-                </span>
-                <span className = "commenntitem">
-                    {`${this.props.comment.comment}(by${this.props.comment.author})`}
                 </span>
                 <p></p>
             </Fragment>
