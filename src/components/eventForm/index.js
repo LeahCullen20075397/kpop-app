@@ -20,7 +20,7 @@ export default class Form extends Component{
     render() {
         return(
             <form className = "form bg-success text-light">
-                <h3>Add an Event</h3>
+                <h2><b>Add an Event</b></h2>
                 <div className = "form-group">
                     <input 
                         type = "text"
