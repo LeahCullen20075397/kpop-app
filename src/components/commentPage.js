@@ -30,7 +30,7 @@ class CommentPage extends Component {
             (comment) => -comment.upvotes
         );
         return(
-           <div className = "container">
+           <div className = "container" style={{borderRadius: '25px', backgroundColor: '#75B9C0'}}>
                <div className = "row">
                    <div className = "col-md-9 col-md-offset-1">
                        <h3>

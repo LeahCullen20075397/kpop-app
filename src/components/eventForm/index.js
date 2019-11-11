@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './eventForm.css';
+import Badge from 'react-bootstrap/Badge';
 
 export default class Form extends Component{
     state = {event: '', poster: '', location: '', date: '', time: '', link: ''};
@@ -19,8 +20,8 @@ export default class Form extends Component{
 
     render() {
         return(
-            <form className = "form bg-success text-light">
-                <h2><b>Add an Event</b></h2>
+            <form className = "form text-light" style={{borderRadius: '25px', backgroundColor: '#75B9C0'}}>
+                <h1><span class="badge" style={{fontSize:'4rem'}}>Add an Event</span></h1>
                 <div className = "form-group">
                     <input 
                         type = "text"

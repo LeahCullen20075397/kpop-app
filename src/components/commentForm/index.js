@@ -23,7 +23,7 @@ export default class Form extends Component {
 
     render() {
         return(
-            <form style = {{marginTop: "30px"}}>
+            <form style = {{marginTop: "30px", padding: '10px'}}>
                 <h3>
                     Add a new comment
                 </h3>
