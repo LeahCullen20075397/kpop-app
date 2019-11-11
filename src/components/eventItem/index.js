@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import './eventItem.css';
 import {Link} from 'react-router-dom';
+import '../../App.js';
 
 export default class EventItem extends Component {
     handleVote = () => this.props.upvoteHandler(this.props.post.id);

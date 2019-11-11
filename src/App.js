@@ -13,6 +13,9 @@ export default class App extends Component {
     api.upvote(id);
     this.setState({});
   };
+  deleteEventItem = (id) => {
+    this.setState({posts: [...this.props.posts.filter(post => post.id !== id)]});
+  };
   render() {
     let posts = _.sortBy(api.getAll(), post => -post.upvotes);
     return(
