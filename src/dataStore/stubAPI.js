@@ -64,28 +64,6 @@ class StubAPI {
         return newLen > len;
     }
 
-    delete(k) {
-        let elements = _.remove(this.posts, post => post.event === k);
-        return elements;
-    }
-
-    initialize(posts) {
-        this.posts = posts;
-    }
-
-    update(key, poster, location, date, time, link) {
-        let index = _.findIndex(this.posts, post => post.event === key);
-        if(index !== -1) {
-            this.posts[index].poster = poster;
-            this.posts[index].location = location;
-            this.posts[index].date = date;
-            this.posts[index].time = time;
-            this.posts[index].link = link;
-            return true;
-        }
-        return false;
-    }
-
     upvote(id) {
         let index = _.findIndex(this.posts, post => post.id === id);
         if(index !== -1) {

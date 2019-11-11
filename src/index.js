@@ -4,7 +4,6 @@ import {BrowserRouter, Route, Redirect, Switch, Link} from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import CommentPage from './components/commentPage';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
 const Router = (props) => {

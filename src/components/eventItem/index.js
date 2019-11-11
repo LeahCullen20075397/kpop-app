@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 import '../../App.js';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
 
 export default class EventItem extends Component {
     handleVote = () => this.props.upvoteHandler(this.props.post.id);
@@ -16,7 +14,7 @@ export default class EventItem extends Component {
             <span>{this.props.post.event}</span>
         );
         return (
-            
+
             <Fragment>
                <div className="d-flex flex-column" class="container "  style={{backgroundColor:'#75B9C0', margin:'10px', borderRadius: '25px'}}>
                 <p></p>
@@ -33,7 +31,7 @@ export default class EventItem extends Component {
                     <li class="list-group-item"><b>Posted by: {this.props.post.poster}</b></li>
                 </ul>
                 <span>
-                    <Button variant="danger"className = "gylphicon glyphicon-remove btn-md">Delete</Button>
+                    <Button variant="danger"className = "gylphicon glyphicon-remove btn-md" onClick = {this.handleDelete}>Delete</Button>
                 </span>
                 <p></p>
                 </div>
