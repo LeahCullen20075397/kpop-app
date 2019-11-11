@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './eventForm.css';
-import Badge from 'react-bootstrap/Badge';
 
 export default class Form extends Component{
     state = {event: '', poster: '', location: '', date: '', time: '', link: ''};

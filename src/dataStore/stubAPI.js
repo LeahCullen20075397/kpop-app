@@ -64,6 +64,26 @@ class StubAPI {
         return newLen > len;
     }
 
+    // find(id) {
+    //     let index = _.findIndex(
+    //         this.posts,
+    //         post => `${posts.event}` === id
+    //     );
+    //     if(index !== -1) {
+    //         return this.posts[index];
+    //     }
+    //     return null;
+    // }
+
+    // delete(k) {
+    //     let elements = _.remove(this.posts, post => post.event === k);
+    //     return elements;
+    // }
+
+    // intialize(posts) {
+    //     this.posts = posts;
+    // }
+
     upvote(id) {
         let index = _.findIndex(this.posts, post => post.id === id);
         if(index !== -1) {

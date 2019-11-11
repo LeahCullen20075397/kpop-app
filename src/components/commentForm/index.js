@@ -20,7 +20,6 @@ export default class Form extends Component {
         this.props.addCommentHandler(comment, name);
         this.setState({comment: '', name: ''});
     };
-
     render() {
         return(
             <form style = {{marginTop: "30px", padding: '10px'}}>

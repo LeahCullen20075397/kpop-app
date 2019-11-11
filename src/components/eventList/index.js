@@ -8,6 +8,7 @@ export default class EventList extends Component{
                 key = {index}
                 post = {post}
                 upvoteHandler = {this.props.upvoteHandler}
+                deleteHandler = {this.props.deleteHandler}
             />
         ));
         return <Fragment>{items}</Fragment>

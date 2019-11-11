@@ -14,7 +14,6 @@ export default class EventItem extends Component {
             <span>{this.props.post.event}</span>
         );
         return (
-
             <Fragment>
                <div className="d-flex flex-column" class="container "  style={{backgroundColor:'#75B9C0', margin:'10px', borderRadius: '25px'}}>
                 <p></p>
@@ -23,7 +22,6 @@ export default class EventItem extends Component {
                         <Button  style={{backgroundColor: '#69C494'}} > <Link to={`/posts/${this.props.post.id}`}> Comments</Link></Button>
                         <Button  variant="primary" className = "ptr" onClick = {this.handleVote} className="glyphicon glyphicon-thumbs-up btn-md">Like  {`${this.props.post.upvotes}`} </Button>
                     </ButtonGroup>
-                
                 <p></p>
                 <ul class="list-group">
                     <li class="list-group-item"><i>{this.props.post.date}</i></li>

@@ -17,6 +17,10 @@ export default class App extends Component {
     api.upvote(id);
     this.setState({});
   };
+  deletePost = (key) => {
+    api.delete(key);
+    this.setState({});
+  }
   render() {
     document.body.style= 'background-image: url("https://66.media.tumblr.com/74dbe32d98265cb64e291100117b6d4a/tumblr_inline_n2590ayYaL1qhwjx8.gif")';
 
@@ -29,7 +33,8 @@ export default class App extends Component {
           <Form handleAdd = {this.addEventItem}/>
         </Col>
         <Col sm={8}>
-          <EventList posts = {posts} upvoteHandler = {this.incrementUpvote}/>
+          <EventList posts = {posts} upvoteHandler = {this.incrementUpvote}
+            deleteHandler = {this.deletePost}/>
         </Col>
       </Row>
       </Container>
