@@ -30,7 +30,7 @@ class StubAPI {
             event: "K Music at London Purcell Room",
             poster: "Lisa Kim",
             location: "Purcell Room - London",
-            date: "18/Nov/2019",
+            date: "18-Nov-2019",
             time: "Not yet disclosed...",
             link: "https://www.stereoboard.com/k-music-tickets/london",
             comments: [],

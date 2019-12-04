@@ -30,7 +30,7 @@ export default class EventItem extends Component {
                     <li class="list-group-item"><b>Posted by: {this.props.post.poster}</b></li>
                 </ul>
                 <span>
-                    <Button variant="danger"className = "gylphicon glyphicon-remove btn-md" onClick={this.deleteVote}>Delete</Button>
+                    <Button variant="danger"className = "glyphicon glyphicon-remove btn-md" onClick={this.deleteVote}>Delete</Button>
                 </span>
                 <p></p>
                 </div>

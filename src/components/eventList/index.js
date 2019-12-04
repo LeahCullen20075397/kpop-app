@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import EventItem from '../eventItem';
+import FilterBox from '../FilterBox';
 
 export default class EventList extends Component{
     render() {
@@ -11,6 +12,6 @@ export default class EventList extends Component{
                 deleteHandler = {this.props.deleteHandler}
             />
         ));
-        return <Fragment>{items}</Fragment>
+        return <Fragment><FilterBox updateFilter={this.props.updateFilter}/>{items}</Fragment>
     }
 }
