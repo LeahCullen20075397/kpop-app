@@ -75,14 +75,14 @@ class StubAPI {
     //     return null;
     // }
 
-    // delete(k) {
-    //     let elements = _.remove(this.posts, post => post.event === k);
-    //     return elements;
-    // }
+    delete(k) {
+        let elements = _.remove(this.posts, post => post.id === k);
+        return elements;
+    }
 
-    // intialize(posts) {
-    //     this.posts = posts;
-    // }
+    intialize(posts) {
+        this.posts = posts;
+    }
 
     upvote(id) {
         let index = _.findIndex(this.posts, post => post.id === id);

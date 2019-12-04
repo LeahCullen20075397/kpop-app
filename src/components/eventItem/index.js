@@ -7,6 +7,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 export default class EventItem extends Component {
     handleVote = () => this.props.upvoteHandler(this.props.post.id);
+    deleteVote = () => this.props.deleteHandler(this.props.post.id);
     render() {
         let line = this.props.post.link ? (
             <a href = {this.props.post.link}>{this.props.post.event}</a>
@@ -20,7 +21,7 @@ export default class EventItem extends Component {
                     <ButtonGroup size='lg' >
                         <Button  style={{backgroundColor: '#F196B4'}} className = "eventitem">{line}</Button>
                         <Button  style={{backgroundColor: '#69C494'}} > <Link to={`/posts/${this.props.post.id}`}> Comments</Link></Button>
-                        <Button  variant="primary" className = "ptr" onClick = {this.handleVote} className="glyphicon glyphicon-thumbs-up btn-md">Like  {`${this.props.post.upvotes}`} </Button>
+                        <Button  variant="primary" onClick = {this.handleVote} className="ptr glyphicon glyphicon-thumbs-up btn-md">Like  {`${this.props.post.upvotes}`} </Button>
                     </ButtonGroup>
                 <p></p>
                 <ul class="list-group">
@@ -29,7 +30,7 @@ export default class EventItem extends Component {
                     <li class="list-group-item"><b>Posted by: {this.props.post.poster}</b></li>
                 </ul>
                 <span>
-                    <Button variant="danger"className = "gylphicon glyphicon-remove btn-md" onClick = {this.handleDelete}>Delete</Button>
+                    <Button variant="danger"className = "gylphicon glyphicon-remove btn-md" onClick={this.deleteVote}>Delete</Button>
                 </span>
                 <p></p>
                 </div>
