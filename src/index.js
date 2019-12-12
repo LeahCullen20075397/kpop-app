@@ -5,7 +5,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import CommentPage from './components/commentPage';
 
-
 const Router = (props) => {
     return(
        <BrowserRouter>
