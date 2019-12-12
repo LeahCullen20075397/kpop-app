@@ -100,3 +100,4 @@ Used react-bootstrap to style assignment, using w3 schools tutorials
 [diagram3]: ./img/diagram3.png
 [diagram4]: ./img/diagram4.png
 
+TheRainyGamer is my second older Github. I accidently pushed up to this project on the two accounts
