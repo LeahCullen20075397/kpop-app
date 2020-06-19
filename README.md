@@ -6,13 +6,12 @@ Name: Leah Cullen-O'Leary 20075397
 
 Basic Kpop events app, which allows a user to add an event to a 
 list of events. These events can be liked and commented on. The
-comments can also be liked. Events can be added. Failed to get the
-delete feature to work.
+comments can also be liked. Events can be added. Delete and edit features work.
 
 Features:
 - basic routing between comments page and home page
 - interactive and dynamic behaviour
-- part-CRUD functionality (adding)
+- full CRUD functionality
 - Can follow links
 - data model: stub API; 2 entities
 - storybook support
