@@ -39,6 +39,18 @@ class StubAPI {
         ];
     }
 
+    update(key, poster, location, date, time){
+        let index = _.findIndex(this.posts, post => post.date === key);
+        if (index !== -1){
+            this.posts[index].poster = poster;
+            this.posts[index].location = location;
+            this.posts[index].date = date;
+            this.posts[index].time = time;
+            return true;
+        }
+        return false;
+    }
+
     getAll() {
         return this.posts;
     }
@@ -64,16 +76,16 @@ class StubAPI {
         return newLen > len;
     }
 
-    // find(id) {
-    //     let index = _.findIndex(
-    //         this.posts,
-    //         post => `${posts.event}` === id
-    //     );
-    //     if(index !== -1) {
-    //         return this.posts[index];
-    //     }
-    //     return null;
-    // }
+     find(id) {
+         let index = _.findIndex(
+             this.posts,
+             post => `${post.date}` === id
+         );
+         if(index !== -1) {
+             return this.posts[index];
+         }
+         return null;
+     }
 
     delete(k) {
         let elements = _.remove(this.posts, post => post.id === k);
