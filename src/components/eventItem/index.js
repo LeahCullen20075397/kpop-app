@@ -62,7 +62,7 @@ state = {
         }
         return (
             <Fragment>
-            <div className="d-flex flex-column" class="container "  style={{backgroundColor:'#75B9C0', margin:'10px', borderRadius: '25px'}}>
+            <div className="d-flex flex-column" class="container "  style={{backgroundColor:'#75B9C0', margin:'10px', borderRadius: '15px'}}>
                 <p></p>
                     <ButtonGroup size='lg' >
                         <Button  style={{backgroundColor: '#F196B4'}} className = "eventitem">{line}</Button>
@@ -70,7 +70,7 @@ state = {
                         <Button  variant="primary" onClick = {this.handleVote} className="ptr glyphicon glyphicon-thumbs-up btn-md">Like  {`${this.props.post.upvotes}`} </Button>
                     </ButtonGroup>
                 <p></p>
-            </div>
+            
             {this.state.status === "edit" ? (
                 <Fragment>
                     <p>
@@ -128,27 +128,21 @@ state = {
                 <div> 
                 <button
                 type = "button"
-                className = {"btn w-100 " + activeButtons.rightButtonColor}
+                className = {"btn w-300 " + activeButtons.rightButtonColor}
                 onClick = {rightButtonHandler}
                 >
                     {activeButtons.rightButtonVal}
                 </button>
                 <button
                 type = "button"
-                className = {"btn w-90 " + activeButtons.leftButtonColor}
+                className = {"btn w-300 " + activeButtons.leftButtonColor}
                 onClick = {leftButtonHandler}
                 >
                     {activeButtons.leftButtonVal}
                 </button>
                 </div> 
+            </div>
         </Fragment>
     );
     }
 }
-
-
-
-                     /*<span> {this.props.post.poster}</span>
-                  <span> {this.props.post.location}</span>
-                  <span> {this.props.post.date}</span>
-                  <span> {this.props.post.time}</span> */
