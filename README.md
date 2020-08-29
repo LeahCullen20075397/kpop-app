@@ -123,5 +123,11 @@ Used react-bootstrap to style assignment, using w3 schools tutorials
 [diagram2]: ./img/diagram2.png
 [diagram3]: ./img/diagram3.png
 [diagram4]: ./img/diagram4.png
+[diagram5]: ./img/diagram5.png
+[diagram6]: ./img/diagram6.png
+[diagram7]: ./img/diagram7.png
+[diagram8]: ./img/diagram8.png
+[diagram9]: ./img/diagram9.png
+[diagram10]: ./img/diagram10.png
 
 TheRainyGamer is my second older Github. I accidently pushed up to this project on the two accounts
