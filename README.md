@@ -92,14 +92,11 @@ Shows event added to the list.
 ![][diagram7]
 Example of post filtering.
 
-~~~
 Example of post editing.
 
 ![][diagram6]
 ![][diagram8]
 ![][diagram9]
-
-~~~
 
 Example of post deletion
 
