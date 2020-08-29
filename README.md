@@ -14,11 +14,12 @@ Features:
 - full CRUD functionality
 - Can follow links
 - data model: stub API; 2 entities
-- storybook support
+- storybook support (first handup of this assignment had storybook working, subsequent      alterations have broken it and I was unable to fix it)
 
 Bugs:
     storybook shows warning about using outside functions. This
     occurred when I imported the <Link> tag. There is no issues when running the developer tool npm.
+    Storybook stopped functioning on second attempt of this assignment.
 
 # Setup
 
@@ -80,7 +81,31 @@ It then shows the list of events which can be commented on and liked.
 
 ![][diagram3]
 Here a form is made to take in a user's comment on a particular event.
-these comments can also be liked
+these comments can also be liked.
+
+![][diagram5]
+Shows a filled out event form.
+
+![][diagram6]
+Shows event added to the list.
+
+![][diagram7]
+Example of post filtering.
+
+~~~
+Example of post editing.
+
+![][diagram6]
+![][diagram8]
+![][diagram9]
+
+~~~
+
+Example of post deletion
+
+![][diagram6]
+![][diagram8]
+![][diagram10]
 
 ## Routing
 
